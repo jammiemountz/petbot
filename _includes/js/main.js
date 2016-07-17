@@ -1,6 +1,6 @@
 $( document ).ready(function() {
 
-  var itemArr = ['.wifi', '.body', '.camera', '.treat-dispenser']
+  // Set some variables
 
   var docElem = document.documentElement;
   var didScroll = false;
@@ -14,8 +14,20 @@ $( document ).ready(function() {
     [1300,          '.secondary-features',   'hideMe']
   ]
 
+  var scrollIntervalsMobile = [
+//scroll position   section class    class that cues animation
+    [0,           '.summary-title',        'hideMe'],
+    [10,          '.summary-body',         'hideMe'],
+    [250,           '.petbot-svg-container', 'hideMe'],
+    [270,          '.main-features',        'hideMe'],
+    [400,          '.secondary-features',   'hideMe']
+  ]
+
+  var itemArr = ['.wifi', '.body', '.camera', '.treat-dispenser']
+
   // hide all text boxes and opacity layers
-  hide(['.wifi', '.body', '.camera', '.treat-dispenser']);
+  hide(itemArr);
+  // call init to track scroll
   init();
   animateLeft('.your-petcam')
   animateRight('.their-smartphone')
@@ -52,19 +64,34 @@ function init() {
 
 function scrollPage() {
   var sy = scrollY();
-  console.log(sy)
+  // console.log($(window).width())
   // for each item in scrollInterval arrays,
-  $.each(scrollIntervals, function(index, value){
-    // if we're in the section
-    if ( sy >= value[0] ) {
-      // take off the 'hideMe class to reveal element'
-      $(value[1]).removeClass( value[2] );
-    }
-    // else, if we are ABOVE it, add the hideMe class back in.
-    else {
-      $(value[1]).addClass( value[2] );
-    }
-  })
+  if ($(window).width() < 400) {
+    console.log('got mobile')
+    $.each(scrollIntervalsMobile, function(index, value){
+      // if we're in the section
+      if ( sy >= value[0] ) {
+        // take off the 'hideMe class to reveal element'
+        $(value[1]).removeClass( value[2] );
+      }
+      // else, if we are ABOVE it, add the hideMe class back in.
+      else {
+        $(value[1]).addClass( value[2] );
+      }
+    })
+  } else {
+    $.each(scrollIntervals, function(index, value){
+      // if we're in the section
+      if ( sy >= value[0] ) {
+        // take off the 'hideMe class to reveal element'
+        $(value[1]).removeClass( value[2] );
+      }
+      // else, if we are ABOVE it, add the hideMe class back in.
+      else {
+        $(value[1]).addClass( value[2] );
+      }
+    })
+  }
   didScroll = false;
 }
 

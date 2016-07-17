@@ -1,0 +1,71 @@
+header {
+  position: fixed;
+  height: 60px;
+  background-color: rgba(0,0,0, .8);
+  width: 100%;
+  top: 0;
+  z-index: 100;
+  min-width: 320px;
+}
+
+.logo {
+  width: 100px;
+  margin: 13px;
+}
+
+.menu-right {
+  float: right;
+  display: table;
+  height: 100%;
+}
+
+.cta-container,
+.faq-container {
+  height: 100%;
+  width: 130px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.faq {
+  vertical-align: middle;
+  width: 160px;
+  text-align: center;
+  height: 40px;
+  border: none;
+  text-decoration: none;
+  padding: 6px 10px;
+  background-color: black;
+  color: white;
+}
+
+.cta {
+  vertical-align: middle;
+  width: 160px;
+  text-align: center;
+  height: 40px;
+  background-color: #f27e7e;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  text-decoration: none;
+  transition: all .3s ease;
+}
+
+.cta:hover {
+  background-color: white;
+  color: #f27e7e;
+}
+
+/* MOBILE */
+@media only screen and (max-width: 600px) {
+  .social-media {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .faq-container {
+    display: none;
+  }
+}
