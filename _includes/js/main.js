@@ -16,8 +16,8 @@ $( document ).ready(function() {
 
   var scrollIntervalsMobile = [
 //scroll position   section class    class that cues animation
-    [10,           '.summary-title',        'hideMe'],
-    [50,          '.summary-body',         'hideMe'],
+    [0,           '.summary-title',        'hideMe'],
+    [10,          '.summary-body',         'hideMe'],
     [250,           '.petbot-svg-container', 'hideMe'],
     [270,          '.main-features',        'hideMe'],
     [400,          '.secondary-features',   'hideMe']
