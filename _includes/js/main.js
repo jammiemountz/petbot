@@ -16,11 +16,11 @@ $( document ).ready(function() {
 
   var scrollIntervalsMobile = [
 //scroll position   section class    class that cues animation
-    [50,           '.summary-title',        'hideMe'],
-    [100,           '.summary-body',         'hideMe'],
-    [200,           '.petbot-svg-container', 'hideMe'],
-    [500,          '.main-features',        'hideMe'],
-    [800,          '.secondary-features',   'hideMe']
+    [10,           '.summary-title',        'hideMe'],
+    [50,          '.summary-body',         'hideMe'],
+    [250,           '.petbot-svg-container', 'hideMe'],
+    [270,          '.main-features',        'hideMe'],
+    [400,          '.secondary-features',   'hideMe']
   ]
 
   var itemArr = ['.wifi', '.body', '.camera', '.treat-dispenser']
@@ -67,7 +67,7 @@ function scrollPage() {
   // console.log($(window).width())
   // for each item in scrollInterval arrays,
   if ($(window).width() < 400) {
-    // console.log('got mobile')
+    console.log('got mobile')
     $.each(scrollIntervalsMobile, function(index, value){
       // if we're in the section
       if ( sy >= value[0] ) {
