@@ -12,6 +12,7 @@ body {
     font-feature-settings: "kern" 1;
     font-kerning: normal;
     min-width: 320px;
+    margin: 0;
 }
 
 a {
@@ -20,4 +21,22 @@ a {
 
 a:hover {
   color: #f27e7e;
+}
+
+section,
+footer {
+  padding: 80px;
+}
+
+footer {
+  background-color: #43403a;
+}
+
+/* MOBILE */
+@media only screen and (max-width: 600px) {
+  section,
+  footer {
+    padding: 50px;
+  }
+
 }
