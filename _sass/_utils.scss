@@ -1,35 +1,39 @@
 .social-media {
   height: 100%;
-  width: 50px;
-  display: table-cell;
-  vertical-align: middle;
-  background-size: 30px 30px;
-  background-repeat: no-repeat;
-  background-position: center center;
+  width: 30px;
+  height: 30px;
+  background-size: 90px 60px;
+}
+
+.twitter,
+.facebook,
+.pinterest {
+  background-image: url('../assets/social-sprite.png');
+  margin-right: 15px;
 }
 
 .twitter {
-  background-image: url('../assets/twitter-icon.png');
+  background-position: 60px 30px;
 }
 
 .facebook {
-  background-image: url('../assets/facebook-icon.png');
+  background-position: 0px 30px;
 }
 
 .pinterest {
-  background-image: url('../assets/pinterest-icon.png');
+  background-position: 30px 30px;
 }
 
 .twitter:hover {
-  background-image: url('../assets/twitter-icon-hover.png');
+  background-position: 60px 0px;
 }
 
 .facebook:hover {
-  background-image: url('../assets/facebook-icon-hover.png');
+  background-position: 0px 0px;
 }
 
 .pinterest:hover {
-  background-image: url('../assets/pinterest-icon-hover.png');
+  background-position: 30px 0px;
 }
 
 .pink {
@@ -79,4 +83,11 @@
 
 .underline {
   text-decoration: underline;
+}
+
+.caps {
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: lighter;
 }

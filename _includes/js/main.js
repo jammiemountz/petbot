@@ -9,18 +9,24 @@ $( document ).ready(function() {
 //scroll position   section class    class that cues animation
     [150,           '.summary-title',        'hideMe'],
     [200,           '.summary-body',         'hideMe'],
-    [400,           '.petbot-svg-container', 'hideMe'],
+    [250,           '.pet-cat',               'hideMe'],
+    [290,           '.pet-browndog',          'hideMe'],
+    [330,           '.pet-greydog',           'hideMe'],
+    [330,           '.petbot-svg-container', 'hideMe'],
     [900,          '.main-features',        'hideMe'],
     [1300,          '.secondary-features',   'hideMe']
   ]
 
   var scrollIntervalsMobile = [
 //scroll position   section class    class that cues animation
-    [0,           '.summary-title',        'hideMe'],
-    [10,          '.summary-body',         'hideMe'],
-    [250,           '.petbot-svg-container', 'hideMe'],
-    [270,          '.main-features',        'hideMe'],
-    [400,          '.secondary-features',   'hideMe']
+    [0,            '.summary-title',         'hideMe'],
+    [10,           '.summary-body',          'hideMe'],
+    [50,           '.pet-cat',               'hideMe'],
+    [70,           '.pet-browndog',          'hideMe'],
+    [90,           '.pet-greydog',           'hideMe'],
+    [250,          '.petbot-svg-container',  'hideMe'],
+    [270,          '.main-features',         'hideMe'],
+    [400,          '.secondary-features',    'hideMe']
   ]
 
   var itemArr = ['.wifi', '.body', '.camera', '.treat-dispenser']
