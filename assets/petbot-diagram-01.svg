@@ -1,6 +1,6 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 1136 574" style="enable-background:new 0 0 1136 574;" xml:space="preserve">
-<image style="overflow:visible;" width="442" height="540" xlink:href="/img/petbot.png"  transform="matrix(1 0 0 1 319 18)">
+<image style="overflow:visible;" width="442" height="540" xlink:href="/assets/petbot.png"  transform="matrix(1 0 0 1 319 18)">
 </image>
 <path style="opacity:0.54;fill:#FFFFFF;" d="M650.8,5c15.2,11.8,25,30.2,25,50.9c0,35.6-28.8,64.4-64.4,64.4
 	c-21.3,0-40.3-10.4-52-26.4c-1.5,34.3-29.7,61.6-64.3,61.6c-35.6,0-64.4-28.8-64.4-64.4c0-35.6,28.8-64.4,64.4-64.4

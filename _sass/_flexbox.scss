@@ -1,0 +1,33 @@
+.flex {
+  display: flex;
+}
+
+.flex.row {
+  flex-direction: row;
+}
+
+.flex .halves {
+  width: 50%;
+}
+
+.flex .thirds {
+  width: 32%;
+  padding: 0 30px 0 30px;
+}
+
+.center {
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .flex.row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .flex .halves {
+    width: 80%;
+  }
+  .flex .thirds {
+    width: 80%;
+  }
+}

@@ -1,0 +1,82 @@
+.social-media {
+  height: 100%;
+  width: 50px;
+  display: table-cell;
+  vertical-align: middle;
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.twitter {
+  background-image: url('../assets/twitter-icon.png');
+}
+
+.facebook {
+  background-image: url('../assets/facebook-icon.png');
+}
+
+.pinterest {
+  background-image: url('../assets/pinterest-icon.png');
+}
+
+.twitter:hover {
+  background-image: url('../assets/twitter-icon-hover.png');
+}
+
+.facebook:hover {
+  background-image: url('../assets/facebook-icon-hover.png');
+}
+
+.pinterest:hover {
+  background-image: url('../assets/pinterest-icon-hover.png');
+}
+
+.pink {
+  color: #f27e7e;
+}
+
+.white {
+  color: white;
+}
+
+.background-img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.center {
+  text-align: center;
+}
+
+.hide {
+  opacity: 0;
+}
+
+.hideMe {
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.hideMe-left {
+  opacity: 0;
+  transform: translateX(-50px);
+}
+
+.hideMe-right {
+  opacity: 0;
+  transform: translateX(50px);
+}
+
+.trigger {
+  cursor: pointer;
+}
+
+.relative {
+  position: relative;
+}
+
+.underline {
+  text-decoration: underline;
+}
