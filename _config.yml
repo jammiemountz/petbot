@@ -7,7 +7,7 @@
 
 # Site settings
 title: PetBot
-email: jmmountz@gmail.com
+email: info@petbot.com
 description: PetBot Smartphone for Pets
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://jammiemountz.github.io/petbot/" # the base hostname & protocol for your site
