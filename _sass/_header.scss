@@ -46,7 +46,7 @@ header {
 .cta {
   text-align: center;
   height: 25px;
-  background-color: #f27e7e;
+  background-color: $accent;
   color: white;
   border: none;
   padding: 6px 10px;
@@ -56,7 +56,7 @@ header {
 
 .cta:hover {
   background-color: white;
-  color: #f27e7e;
+  color: $accent;
 }
 
 /* MOBILE */

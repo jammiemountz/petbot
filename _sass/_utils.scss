@@ -2,46 +2,36 @@
   height: 100%;
   width: 30px;
   height: 30px;
-  background-size: 90px 60px;
-}
-
-.twitter,
-.facebook,
-.pinterest {
-  background-image: url('../assets/social-sprite.png');
   margin-right: 15px;
+  background-size: 90px 60px;
+  &:hover {
+    .accent-fill {
+      fill: $light;
+    }
+    .white-fill {
+      fill: $accent;
+    }
+  }
 }
 
-.twitter {
-  background-position: 60px 30px;
-}
-
-.facebook {
-  background-position: 0px 30px;
-}
-
-.pinterest {
-  background-position: 30px 30px;
-}
-
-.twitter:hover {
-  background-position: 60px 0px;
-}
-
-.facebook:hover {
-  background-position: 0px 0px;
-}
-
-.pinterest:hover {
-  background-position: 30px 0px;
-}
-
-.pink {
-  color: #f27e7e;
+.accent {
+  color: $accent;
 }
 
 .white {
-  color: white;
+  color: $light;
+}
+
+.accent-stroke {
+  stroke: $accent;
+}
+
+.accent-fill {
+  fill: $accent;
+}
+
+.white-fill {
+  fill: $light;
 }
 
 .background-img {
@@ -88,6 +78,13 @@
 .caps {
   text-transform: uppercase;
   font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: lighter;
+}
+
+.large-caps {
+  text-transform: uppercase;
+  font-size: 24px;
   letter-spacing: 2px;
   font-weight: lighter;
 }

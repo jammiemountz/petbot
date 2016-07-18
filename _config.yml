@@ -14,5 +14,16 @@ url: "https://jammiemountz.github.io/petbot/" # the base hostname & protocol for
 twitter_username: jekyllrb
 github_username:  jekyll
 
+social-icons:
+ - title: Facebook
+   url: https://www.facebook.com/mypetbot
+   class: facebook
+ - title: Twitter
+   url: https://twitter.com/ThePetBot
+   class: twitter
+ - title: Pinterest
+   url: https://www.pinterest.com/thepetbot/
+   class: pinterest
+
 # Build settings
 markdown: kramdown

@@ -7,6 +7,45 @@
   @media only screen and (max-width: 600px) {
     min-height: 150px;
   }
+  @media only screen and (min-width: 1000px) {
+    min-height: 450px;
+  }
+}
+
+.play-video {
+  height: 82px;
+  width: 230px;
+  border: 3px solid white;
+  margin: 0 auto;
+  text-align: center;
+  cursor: pointer;
+  transition: all .2s ease;
+  overflow: hidden;
+  align-self: center;
+  .play-text {
+    transition: all .2s ease;
+    color: white;
+    position: relative;
+  }
+  .play-button {
+    transition: all .2s ease;
+    background-image: url('/assets/play-button.svg');
+    height: 40px;
+    width: 40px;
+    margin: 0 auto;
+    opacity: 0;
+  }
+  &:hover {
+    background-color: $accent;
+    .play-text {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+    .play-button {
+      opacity: 1;
+      transform: translateY(-65px);
+    }
+  }
 }
 
 
@@ -16,11 +55,16 @@
 .headline {
   padding: 0 10px;
   height: 150px;
-  background-color: #333333;
+  background-color: $dark;
   height: 114px;
   @media only screen and (max-width: 600px) {
     height: 58px;
   }
+}
+
+.headline-container {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .your-petcam {
@@ -28,7 +72,6 @@
   position: relative;
   top: -26px;
   font-size: 4em;
-  color: #e8e8e8;
   @media only screen and (max-width: 600px) {
     top: -15px;
     font-size: 2.3em;
@@ -41,6 +84,8 @@
   position: relative;
   top: -62px;
   font-size: 4em;
+  color: white;
+  font-weight: bolder;
   @media only screen and (max-width: 600px) {
     font-size: 2em;
     top: -38px;
@@ -52,7 +97,7 @@
 // SECTION THREE: SUMMARY
 
 .petbot-summary {
-  background-color: #f27e7e;
+  // background-color: $accent;
 }
 
 .pet-icons {
@@ -80,10 +125,11 @@
 }
 
 
+
 // SECTION FIVE: REVOLUTIONARY FEATURES
 
 .revolutionary-features {
-  background-color: #43403a;
+  background-color: $dark;
 }
 
 .list {
@@ -114,9 +160,12 @@
 }
 
 .ios-app {
+  background-image: url('../assets/app-sprite.png');
   height: 200px;
-  width: auto;
+  width: 113px;
+  border-radius:5px;
   margin: 0 auto;
+  animation: ios-sprite 5s steps(6) infinite;
 }
 
 .treats {
@@ -164,7 +213,7 @@
 
 .the-team {
   display: none; // REMOVE WHEN INFO IS READY
-  background-color: #f27e7e;
+  background-color: $accent;
 }
 
 // COMMON

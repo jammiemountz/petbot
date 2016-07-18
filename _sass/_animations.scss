@@ -37,3 +37,12 @@
     transform: translate(18px, 27px);
   }
 }
+
+@keyframes ios-sprite {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: -690px;
+  }
+}
