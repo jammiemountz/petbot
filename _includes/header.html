@@ -1,6 +1,8 @@
 <header>
   <div class="menu-left">
-    <img class="logo" src="{{ "/assets/petbot-logo-light.png" | prepend: site.url }}" />
+    <a href="{{site.url}}">
+      <img class="logo" src="{{ "/assets/petbot-logo-light.png" | prepend: site.url }}" />
+    </a>
   </div>
   <div class="menu-right">
     {% include social-media.html %}
