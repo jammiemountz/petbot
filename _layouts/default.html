@@ -7,7 +7,7 @@
 
     {% include header.html %}
 
-    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.url }}">
     <div class="{{" page-content" | prepend: page.title}}">
       {{ content }}
     </div>
