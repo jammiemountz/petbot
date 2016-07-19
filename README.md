@@ -31,3 +31,8 @@ All files in `/_site` and `.sass-cache` are compiled by jekyll and shouldn't be 
 ## Deployment
 
 Commit and push to the `gh-pages` branch. Page will be live at https://jammiemountz.github.io/petbot/
+
+## Contributing
+
+Make branches off of master, push up to the origin repo and open a pull request to master or gh-pages.
+Any PR merged into gh-pages will be auto-merged into master.
