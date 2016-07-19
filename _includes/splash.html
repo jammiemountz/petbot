@@ -18,21 +18,22 @@
 
 <section class="petbot-summary">
   <div class="section-container">
-    <div class="flex row flex-center">
-      <img class="pet-icons pet-cat animate-in-transition hideMe" src="./assets/pet-cat.svg" />
-      <img class="pet-icons pet-browndog animate-in-transition hideMe" src="./assets/pet-browndog.svg" />
-      <img class="pet-icons pet-greydog animate-in-transition hideMe" src="./assets/pet-greydog.svg" />
+    <div class="pet-brown-dog flex row flex-center">
+      {% include pet-browndog.svg %}
     </div>
-    <h2 class="large-caps summary-title animate-in-transition hideMe">Check in on your pet while you’re away.</h2>
-    <p class="summary-body animate-in-transition hideMe">Interact with your pet by using a treat dispenser, built in camera and speaker. PetBot is the only pet monitoring tool that gives your pets the ability to <span class="underline">send you selfies throughout the day</span>, allowing for true two-way communication.</p>
+    <h2 class="large-caps summary-title">Check in on your pet while you’re away.</h2>
+    <p class="summary-body">Interact with your pet by using a treat dispenser, built in camera and speaker. PetBot is the only pet monitoring tool that gives your pets the ability to <span class="underline">send you selfies throughout the day</span>, allowing for true two-way communication.</p>
   </div>
 </section>
 
 <section class="petbot-svg">
   <div class="section-container">
-    <div class="petbot-svg-container animate-in-transition hideMe">
-      <h2 class="large-caps center">Explore PetBot</h2>
-      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+    <div class="pet-cat flex row flex-center">
+      {% include pet-cat.svg %}
+    </div>
+    <div class="petbot-svg-container">
+      <h2 class="explore-title large-caps center">Explore PetBot</h2>
+      <svg class="petbot-explore-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
       	 viewBox="0 0 1136 574" style="enable-background:new 0 0 1136 574;" xml:space="preserve">
       <image style="overflow:visible;" width="442" height="540" xlink:href="./assets/petbot.png"  transform="matrix(1 0 0 1 319 18)">
       </image>
@@ -104,46 +105,41 @@
 <section class="revolutionary-features">
   <div class="section-container">
 
-    <h2 class="large-caps white center">Revolutionary Features</h2>
-    <div class="flex row main-features animate-in-transition hideMe">
-      <div class="thirds">
-        <!-- <div class="ios-noise-container"> -->
-          <!-- <img class="ios-app" src="./assets/ios-noise.gif" /> -->
-          <!-- <div  -->
-        <!-- </div> -->
+    <h2 class="revolutionary-features-title large-caps white center">Revolutionary Features</h2>
+    <div class="flex row main-features">
+      <div class="thirds ios-app-container">
         <div class="background-img ios-app"></div>
         <h2 class="white center">See their face</h2>
         <p class="white center">Log in to your smartphone application to play a noise, and watch your pet come running over!</p>
       </div>
-      <div class="thirds">
+      <div class="thirds treats-container">
         <div class="background-img treats"></div>
         <h2 class="white center">Toss a treat</h2>
-        <p class="white center">Reward your pet with a tasty treat right from your smartphone.</p>
+        <p class="white center">Reward your pet with a tasty treat right from your smartphone! Useful for training or stimulation when you have to be away.</p>
       </div>
-      <div class="thirds">
+      <div class="thirds selfie-container">
         <div class="background-img selfie"></div>
-        <h2 class="white center">Get a pet-selfie</h2>
-        <p class="white center">Throughout the day, pets can send you bark/meow notifications or pet selfies on their own.</p>
+        <h2 class="white center">Pet-selfies!</h2>
+        <p class="white center">Petbots petificial intelligence can recognize your pet nearby and send you spontaneous petselfies throughout the day. Each petselfie includes a 10 second video clip your furry companion enjoying a bite sized reward!</p>
       </div>
     </div>
-    <div class="flex row secondary-features animate-in-transition hideMe">
+    <div class="flex row secondary-features">
       <div class="halves">
         <div class="list">
           <ul>
-            <li class="white">Ability to mount PetBot on the wall</li>
-            <li class="white">Customization of the treat type</li>
-            <li class="white">Schedule pet-selfies to be taken</li>
-            <li class="white">Low treat level notifications</li>
+            <li class="white"><span class="accent">Durable</span> - Made from quality plastic with support for wall mounting for even the most devious of pets</li>
+            <li class="white"><span class="accent">Send the treats you want</span> - Supports many small to medium treat forma</li>
+            <li class="white"><span class="accent">Spontaneous petselfies</span> - Brighten up your day by receiving these special video messages from your pet</li>
           </ul>
         </div>
       </div>
       <div class="halves">
         <div class="list no-border-hack">
           <ul class="relative">
-            <li class="white">Customize the look of your PetBot</li>
-            <li class="white">Bark type recognition</li>
+            <li class="white"><span class="accent">Refill warning</span> - Let PetBot notify you when you are almost out of treats</li>
+            <li class="white"><span class="accent">Bark Recognition</span> - State of the art algorithms are able to recognize and report when your pet is excessively barking</li>
             <li class="dot"></li>
-            <li class="white"><a href="http://www.livescience.com/34093-dogs-laser-beams.html">Interactions don't add to pet stress levels</a></li>
+            <li class="white"><a href="http://www.livescience.com/34093-dogs-laser-beams.html"><span class="accent">Don't add stress</span></a> - With small treats, you can't go wrong</li>
           <ul>
         </div>
       </div>
@@ -156,17 +152,20 @@
   <div class="section-container">
     <div class="flex row">
       <div class="halves">
-        <h2 class="large-caps">Our Story</h2>
-        <div class="video-wrapper">
+        <h2 class="video-title large-caps">Our Story</h2>
+        <div class="video-wrapper video-our-story">
           <iframe width="100%" height="auto" src="https://www.youtube.com/embed/Ap2XI0QBcfY" frameborder="0" allowfullscreen></iframe>
         </div>
       </div>
       <div class="halves">
         <h2 class="large-caps">Our Customers</h2>
-        <div class="video-wrapper">
+        <div class="video-wrapper video-our-customers">
           <iframe width="100%" height="auto" src="https://www.youtube.com/embed/GQJJCLFWAag" frameborder="0" allowfullscreen></iframe>
         </div>
       </div>
+    </div>
+    <div class="flex row flex-center pet-grey-dog">
+      {% include pet-greydog.svg %}
     </div>
   </div>
 </section>

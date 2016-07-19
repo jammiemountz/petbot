@@ -6,6 +6,8 @@ Static website for petbot.
 
 - Clone down directory
 
+- Uncomment line in `_config.yml` to set base url to local, Comment out line that sets if to deployment
+
 - run `jekyll serve`
 
 - navigate to http://localhost:4000
@@ -19,6 +21,8 @@ The index.html includes `/_includes/splash.html`, which is the homepage (aka spl
 Scripts are located in `/_includes/js/`, and are added at the end of the html body in the endtags.html snippet.
 
 Styles are written in SASS in the `/_sass/` and are compiled by `/css/main.scss` - if you add a new stylesheet in the `/_sass/` directory, it must also be added in the main.scss include.
+
+Change the ACCENT color in main.css
 
 Images are stored in `/assets`
 
