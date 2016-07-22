@@ -62,7 +62,7 @@
 .headline {
   padding: 0 10px;
   height: 150px;
-  background-color: $dark;
+  background-color: $accent;
   height: 114px;
   @media only screen and (max-width: 600px) {
     height: 58px;
@@ -76,6 +76,7 @@
 
 .your-petcam {
   margin: 0;
+  color: $light;
   position: relative;
   top: -26px;
   font-size: 4em;
@@ -88,6 +89,7 @@
 .their-smartphone {
   margin: 0;
   text-align: right;
+  color: white;
   position: relative;
   top: -55px;
   font-size: 3.6em;
@@ -143,15 +145,18 @@
 // SECTION FIVE: REVOLUTIONARY FEATURES
 
 .revolutionary-features {
-  background-color: $dark;
+  background-color: $accent;
 }
 
 .list {
   line-height: 45px;
   font-size: 15px;
   margin-top: 50px;
-  border-top: 1px solid #949494;
+  border-top: 1px solid $light;
   color: #e2e2e2;
+  .list-accent {
+    color: #fffd7b;
+  }
   li {
     line-height: 22px;
     margin-top: 30px;

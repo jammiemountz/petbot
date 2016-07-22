@@ -53,6 +53,7 @@ $( document ).ready(function() {
   init();
   animateLeft('.your-petcam')
   animateRight('.their-smartphone')
+  animateIn('.pet-brown-dog', '.summary-title'),
 
   $.each(itemArr, function(index, item){
     $(item + '-trigger').on('mouseover', function(){
