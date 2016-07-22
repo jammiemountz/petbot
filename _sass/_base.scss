@@ -15,12 +15,27 @@ body {
     margin: 0;
 }
 
+h1, h2, h3, h4, h5, p {
+  color: $dark;
+  font-weight: 100;
+}
+
+p {
+  font-weight: lighter;
+  font-size: 14px;
+}
+
 a {
   color: white;
 }
 
 a:hover {
-  color: #f27e7e;
+  color: $accent;
+}
+
+.section-container {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 section,
@@ -30,6 +45,10 @@ footer {
 
 footer {
   background-color: #43403a;
+}
+
+.page-content {
+  margin-top: 60px;
 }
 
 /* MOBILE */

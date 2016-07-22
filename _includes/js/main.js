@@ -5,23 +5,45 @@ $( document ).ready(function() {
   var docElem = document.documentElement;
   var didScroll = false;
 
-  var scrollIntervals = [
-//scroll position   section class    class that cues animation
-    [150,           '.summary-title',        'hideMe'],
-    [200,           '.summary-body',         'hideMe'],
-    [400,           '.petbot-svg-container', 'hideMe'],
-    [900,          '.main-features',        'hideMe'],
-    [1300,          '.secondary-features',   'hideMe']
+  $(".various").fancybox({
+  		maxWidth	: 800,
+  		maxHeight	: 600,
+  		fitToView	: false,
+  		width		: '70%',
+  		height		: '70%',
+  		autoSize	: false,
+  		closeClick	: false,
+  		openEffect	: 'none',
+  		closeEffect	: 'none'
+  	});
+
+  var animateFadeIn = [
+    '.pet-brown-dog',
+    '.summary-title',
+    '.summary-body',
+    '.pet-cat',
+    '.explore-title',
+    '.petbot-explore-svg',
+    '.revolutionary-features-title',
+    '.ios-app-container',
+    '.treats-container',
+    '.selfie-container',
+    '.secondary-features',
+    '.video-title',
+    '.video-our-story',
+    '.video-our-customers',
+    '.pet-grey-dog'
   ]
 
-  var scrollIntervalsMobile = [
-//scroll position   section class    class that cues animation
-    [0,           '.summary-title',        'hideMe'],
-    [10,          '.summary-body',         'hideMe'],
-    [250,           '.petbot-svg-container', 'hideMe'],
-    [270,          '.main-features',        'hideMe'],
-    [400,          '.secondary-features',   'hideMe']
-  ]
+  $('.play-video').removeClass( 'hideMe' );
+
+  $.each(animateFadeIn, function(index, item){
+    $(item).addClass('animate-in-transition hideMe')
+  })
+
+  $.each(animateFadeIn, function(index, item){
+    console.log($(item).offset().top)
+  })
 
   var itemArr = ['.wifi', '.body', '.camera', '.treat-dispenser']
 
@@ -31,6 +53,7 @@ $( document ).ready(function() {
   init();
   animateLeft('.your-petcam')
   animateRight('.their-smartphone')
+  animateIn('.pet-brown-dog', '.summary-title'),
 
   $.each(itemArr, function(index, item){
     $(item + '-trigger').on('mouseover', function(){
@@ -66,32 +89,17 @@ function scrollPage() {
   var sy = scrollY();
   // console.log($(window).width())
   // for each item in scrollInterval arrays,
-  if ($(window).width() < 400) {
-    console.log('got mobile')
-    $.each(scrollIntervalsMobile, function(index, value){
-      // if we're in the section
-      if ( sy >= value[0] ) {
-        // take off the 'hideMe class to reveal element'
-        $(value[1]).removeClass( value[2] );
-      }
-      // else, if we are ABOVE it, add the hideMe class back in.
-      else {
-        $(value[1]).addClass( value[2] );
-      }
-    })
-  } else {
-    $.each(scrollIntervals, function(index, value){
-      // if we're in the section
-      if ( sy >= value[0] ) {
-        // take off the 'hideMe class to reveal element'
-        $(value[1]).removeClass( value[2] );
-      }
-      // else, if we are ABOVE it, add the hideMe class back in.
-      else {
-        $(value[1]).addClass( value[2] );
-      }
-    })
-  }
+  $.each(animateFadeIn, function(index, item){
+    // if we're in the section
+    if ( sy >= $(item).offset().top - window.innerHeight ) {
+      // take off the 'hideMe class to reveal element'
+      $(item).removeClass( 'hideMe' );
+    }
+    // else, if we are ABOVE it, add the hideMe class back in.
+    else {
+      $(item).addClass( 'hideMe' );
+    }
+  })
   didScroll = false;
 }
 

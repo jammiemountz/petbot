@@ -8,7 +8,8 @@
   <meta name="description" content="PetBot Smartphone for Pets">
 
   <link href='https://fonts.googleapis.com/css?family=Poppins:400,300,600' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.url }}">
+  <link rel="stylesheet" href="{{ "/css/jquery.fancybox.css" | prepend: site.url }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <!-- <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}"> -->
 </head>

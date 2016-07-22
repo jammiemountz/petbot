@@ -1,0 +1,30 @@
+.social-media-footer-container {
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  .social-media {
+    display: inline-block;
+  }
+}
+
+.email-input,
+.first-name-input,
+.last-name-input {
+  height: 24px;
+  border-radius: 3px;
+  border: none;
+  margin: 0px 16px;
+  padding-left: 7px;
+  @media only screen and (max-width: 600px) {
+    margin-top: 10px;
+  }
+}
+
+.subscribe-cta {
+  height: 40px;
+  width: 130px;
+  font-weight: bolder;
+  @media only screen and (max-width: 600px) {
+    margin-top: 10px;
+  }
+}

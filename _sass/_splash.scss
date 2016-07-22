@@ -1,11 +1,57 @@
 // SECTION ONE: LARGE IMAGE
 
-.splash {
-  margin-top: 60px;
+.splash-section {
+  // margin-top: 60px;
   min-height: 300px;
   background-image: url('../assets/petbot1.jpg');
   @media only screen and (max-width: 600px) {
     min-height: 150px;
+  }
+  @media only screen and (min-width: 1000px) {
+    min-height: 450px;
+  }
+}
+
+.play-video {
+  height: 82px;
+  width: 230px;
+  border: 3px solid white;
+  margin: 0 auto;
+  text-align: center;
+  cursor: pointer;
+  transition: all .2s ease;
+  overflow: hidden;
+  align-self: center;
+  @media only screen and (max-width: 600px) {
+    height: 55px;
+    width: 170px;
+  }
+  .play-text {
+    transition: all .2s ease;
+    color: white;
+    position: relative;
+    @media only screen and (max-width: 600px) {
+      margin: 10px;
+    }
+  }
+  .play-button {
+    transition: all .2s ease;
+    background-image: url('../assets/play-button.svg');
+    height: 40px;
+    width: 40px;
+    margin: 0 auto;
+    opacity: 0;
+  }
+  &:hover {
+    background-color: $accent;
+    .play-text {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+    .play-button {
+      opacity: 1;
+      transform: translateY(-65px);
+    }
   }
 }
 
@@ -16,19 +62,24 @@
 .headline {
   padding: 0 10px;
   height: 150px;
-  background-color: #333333;
+  background-color: $accent;
   height: 114px;
   @media only screen and (max-width: 600px) {
     height: 58px;
   }
 }
 
+.headline-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 .your-petcam {
   margin: 0;
+  color: $light;
   position: relative;
   top: -26px;
   font-size: 4em;
-  color: #e8e8e8;
   @media only screen and (max-width: 600px) {
     top: -15px;
     font-size: 2.3em;
@@ -38,12 +89,18 @@
 .their-smartphone {
   margin: 0;
   text-align: right;
+  color: white;
   position: relative;
-  top: -62px;
-  font-size: 4em;
+  top: -55px;
+  font-size: 3.6em;
+  font-weight: bolder;
   @media only screen and (max-width: 600px) {
     font-size: 2em;
     top: -38px;
+  }
+  @media only screen and (max-width: 400px) {
+    font-size: 1.8em;
+    top: -34px;
   }
 }
 
@@ -52,9 +109,27 @@
 // SECTION THREE: SUMMARY
 
 .petbot-summary {
-  background-color: #f27e7e;
+  @media only screen and (max-width: 600px) {
+    text-align: center;
+  }
 }
 
+.pet-icons {
+  height: 200px;
+  width: 200px;
+}
+
+.grey-dog {
+  .cls-2{fill:#d8d8d8;}.cls-3{fill:#756568;}.cls-4{fill:#fff;}.cls-5{fill:#897578;}.cls-6{fill:#52494a;}.cls-7{fill:#bbb1b3;}.cls-8{fill:#e8e6e6;}
+}
+
+.brown-dog {
+  .cls-2{fill:#7a421c;}.cls-3{fill:#412312;}.cls-4{fill:#4c4c4d;}.cls-5{fill:#fff;}.cls-6{fill:#cf505e;}.cls-7{fill:#663818;}.cls-8{fill:#f0627a;}.cls-9{fill:#919191;}.cls-10{fill:#8e4d21;}
+}
+
+.cat {
+  .cls-2{fill:#f8ed94;}.cls-3{fill:#7c451e;}.cls-4{fill:#e5907c;}.cls-5{fill:#b06530;}.cls-6{fill:#fff;}.cls-7{fill:#e5d67c;}.cls-8{fill:#ce5d5d;}
+}
 
 // SECTION FOUR: PETBOT SVG
 
@@ -66,25 +141,37 @@
 }
 
 
+
 // SECTION FIVE: REVOLUTIONARY FEATURES
 
 .revolutionary-features {
-  background-color: #43403a;
+  background-color: $accent;
 }
 
 .list {
   line-height: 45px;
   font-size: 15px;
   margin-top: 50px;
-  border-top: 1px solid #949494;
+  border-top: 1px solid $light;
   color: #e2e2e2;
+  .list-accent {
+    color: #fffd7b;
+  }
+  li {
+    line-height: 22px;
+    margin-top: 30px;
+  }
   @media only screen and (max-width: 600px) {
+    ul {
+      padding: 0;
+    }
     border-top: none;
     &.no-border-hack {
       margin-top: -25px;
     }
     li {
-      line-height: 25px;
+      font-size: 12px;
+      line-height: 20px;
       padding-top: 10px;
     }
   }
@@ -100,9 +187,12 @@
 }
 
 .ios-app {
+  background-image: url('../assets/app-sprite.png');
   height: 200px;
-  width: auto;
+  width: 113px;
+  border-radius:5px;
   margin: 0 auto;
+  animation: ios-sprite 5s steps(6) infinite;
 }
 
 .treats {
@@ -150,7 +240,7 @@
 
 .the-team {
   display: none; // REMOVE WHEN INFO IS READY
-  background-color: #f27e7e;
+  background-color: $accent;
 }
 
 // COMMON

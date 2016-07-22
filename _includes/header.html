@@ -1,9 +1,11 @@
 <header>
-  <img class="logo" src="./assets/petbot-logo-light.png" />
+  <div class="menu-left">
+    <a href="{{site.url}}">
+      <img class="logo" src="{{ "/assets/petbot-logo-light.png" | prepend: site.url }}" />
+    </a>
+  </div>
   <div class="menu-right">
-    <a href="https://twitter.com/ThePetBot" class="social-media twitter"></a>
-    <a href="https://www.facebook.com/mypetbot" class="social-media facebook"></a>
-    <a href="https://www.pinterest.com/thepetbot/" class="social-media pinterest"></a>
+    {% include social-media.html %}
     <div class="faq-container">
       <a href="./faq/" class="faq">Learn More</a>
     </div>

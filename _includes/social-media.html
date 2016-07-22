@@ -1,0 +1,6 @@
+<!-- Includes social media svg icons inline, set in config.yml -->
+{% for icon in site.social-icons %}
+  <a class="social-media {{ icon.class }}" href="{{ icon.url }}">
+    {% include {{ icon.class | prepend: '/social-icons/' | append: '.svg' }} %}
+  </a>
+{% endfor %}

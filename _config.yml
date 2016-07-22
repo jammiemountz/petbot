@@ -7,12 +7,25 @@
 
 # Site settings
 title: PetBot
-email: jmmountz@gmail.com
+email: info@petbot.com
 description: PetBot Smartphone for Pets
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://jammiemountz.github.io/petbot/" # the base hostname & protocol for your site
+# url: "https://jammiemountz.github.io/petbot/" # the base hostname & protocol for your site
+# use for development env
+url: "http://127.0.0.1:4000"
 twitter_username: jekyllrb
 github_username:  jekyll
+
+social-icons:
+ - title: Facebook
+   url: https://www.facebook.com/mypetbot
+   class: facebook
+ - title: Twitter
+   url: https://twitter.com/ThePetBot
+   class: twitter
+ - title: Pinterest
+   url: https://www.pinterest.com/thepetbot/
+   class: pinterest
 
 # Build settings
 markdown: kramdown

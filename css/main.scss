@@ -2,6 +2,11 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
+$accent: #49a7ec;
+$dark: #43403a;
+$light: #f3f3f3;
+
+
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "base",
@@ -9,6 +14,7 @@
         "utils",
         "flexbox",
         "header",
+        "footer",
         "faq",
         "splash"
 ;
