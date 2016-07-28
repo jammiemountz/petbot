@@ -12,7 +12,7 @@ description: PetBot Smartphone for Pets
 baseurl: "/" # the subpath of your site, e.g. /blog
 # url: "https://jammiemountz.github.io/petbot/" # the base hostname & protocol for your site
 # use for development env
-url: "petbot.com"
+# url: "petbot.com"
 
 social-icons:
  - title: Facebook
