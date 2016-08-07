@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 415.98 415.98">
+  <title>petbot-graphics-savefromkitty</title>
+  <g id="Layer_2_copy" data-name="Layer 2 copy">
+    <circle cx="207.99" cy="207.99" r="205.49" style="fill: none;stroke: #f1f2f2;stroke-linecap: round;stroke-linejoin: round;stroke-width: 9px"/>
+    <path d="M358.87,240.86a5.92,5.92,0,1,0-3.1-10.09L341.2,215.65a5.92,5.92,0,1,0-10-3.47,5.92,5.92,0,1,0,3.1,10.09l14.57,15.12a5.92,5.92,0,1,0,10,3.47Z" style="fill: none;stroke: #f1f2f2;stroke-linecap: round;stroke-linejoin: round;stroke-width: 5px"/>
+    <polyline points="119.83 189.52 145.17 204.19 119.83 216.85" style="fill: none;stroke: #f1f2f2;stroke-linecap: round;stroke-linejoin: round;stroke-width: 5px"/>
+    <polyline points="119.83 237.92 145.17 252.59 119.83 265.25" style="fill: none;stroke: #f1f2f2;stroke-linecap: round;stroke-linejoin: round;stroke-width: 5px"/>
+    <ellipse cx="165.5" cy="205.18" rx="3.67" ry="11.67" style="fill: none;stroke: #f1f2f2;stroke-linecap: round;stroke-linejoin: round;stroke-width: 5px"/>
+    <ellipse cx="165.5" cy="251.58" rx="3.67" ry="11.67" style="fill: none;stroke: #f1f2f2;stroke-linecap: round;stroke-linejoin: round;stroke-width: 5px"/>
+    <polygon points="177.89 220.85 177.89 232.19 184.67 226.52 177.89 220.85" style="fill: none;stroke: #f1f2f2;stroke-linecap: round;stroke-linejoin: round;stroke-width: 5px"/>
+    <path d="M197.76,203.44,279,211.75a2.47,2.47,0,0,0,.27.06l17.41,1.78c1.71.17,3.28-1.4,3.5-3.5l.12-1.21c.21-2.1-1-4-2.72-4.14l-6.51-.67.06-.61,6.51.67c1.71.17,3.28-1.4,3.5-3.5l.12-1.21c.21-2.1-1-4-2.72-4.14l-6.51-.67.06-.58,6.51.67c1.71.17,3.28-1.4,3.5-3.5l.12-1.21c.21-2.1-1-4-2.72-4.14l-6.51-.67L282.12,184,159.86,171" style="fill: none;stroke: #f1f2f2;stroke-miterlimit: 10;stroke-width: 5px"/>
+    <path d="M167.7,279l114.42-16.89a2.47,2.47,0,0,0,.28,0l17.31-2.56c1.7-.25,2.84-2.17,2.53-4.26l-.18-1.21c-.31-2.09-2-3.6-3.65-3.34l-6.47,1-.09-.61,6.47-1c1.7-.25,2.84-2.17,2.53-4.26l-.18-1.21c-.31-2.09-2-3.6-3.65-3.34l-6.47,1-.08-.57,6.47-1c1.7-.25,2.84-2.17,2.53-4.26l-.18-1.21c-.31-2.09-2-3.6-3.65-3.34l-6.47,1-10.84,1.6L199,246.21" style="fill: none;stroke: #f1f2f2;stroke-miterlimit: 10;stroke-width: 5px"/>
+    <path d="M16.83,283.53H145.34a57.19,57.19,0,0,0,57.19-57.19h0a57.19,57.19,0,0,0-57.19-57.19H6.17" style="fill: none;stroke: #f1f2f2;stroke-linecap: round;stroke-linejoin: round;stroke-width: 5px"/>
+  </g>
+</svg>

@@ -154,18 +154,23 @@
   margin-top: 50px;
   border-top: 1px solid $light;
   color: #e2e2e2;
+  svg {
+    width: 100px;
+  }
   .list-accent {
     color: #fffd7b;
   }
   li {
     line-height: 22px;
     margin-top: 30px;
+    list-style: none;
+    text-align: center;
   }
   @media only screen and (max-width: 600px) {
+    border-top: none;
     ul {
       padding: 0;
     }
-    border-top: none;
     &.no-border-hack {
       margin-top: -25px;
     }
