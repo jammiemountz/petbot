@@ -80,7 +80,7 @@ function init() {
     // simple way to throttle the scroll event
     if( !didScroll ) {
       didScroll = true;
-      setTimeout( scrollPage, 250 );
+      setTimeout( scrollPage, 150 );
     }
   }, false );
 }

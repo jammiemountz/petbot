@@ -1,8 +1,11 @@
 <header>
-  <div class="menu-left">
+  <div class="menu-left flex row">
     <a href="{{site.url}}">
-      <img class="logo" src="{{ "/assets/petbot-logo-light.png" | prepend: site.url }}" />
+      <img class="logo" src="{{ "/assets/petbot-logo-dark.png" | prepend: site.url }}" />
     </a>
+    <a href="#menu-tabs-features"><p class="caps menu-tabs">Features</p></a>
+    <a href="#menu-tabs-explore"><p class="caps menu-tabs">Explore</p></a>
+    <a href="#menu-tabs-videos"><p class="caps menu-tabs">Videos</p></a>
   </div>
   <div class="menu-right">
     {% include social-media.html %}
